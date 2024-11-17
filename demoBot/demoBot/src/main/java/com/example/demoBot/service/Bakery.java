@@ -2,7 +2,7 @@ package com.example.demoBot.service;
 
 public class Bakery {
     static String help(){
-        return "Это бот пекарни. Он может предоставить меня командой /menu";
+        return "Это бот пекарни. Он может предоставить меню командой /menu";
     }
 
     static String menu(){
