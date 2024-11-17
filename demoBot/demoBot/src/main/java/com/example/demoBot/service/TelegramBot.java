@@ -37,23 +37,10 @@ public class TelegramBot extends TelegramLongPollingBot{
 
             sendMessage(chatId, Dialogue.startDialogue(massageText));
 
-            /*switch (massageText) {
-                case "/start":
-                    startCommandReceived(chatId, update.getMessage().getChat().getFirstName());
-                    break;
-                default:
-                    sendMessage(chatId, "Not recognized");
-            }*/
         } 
 
     }
-    /*private void startCommandReceived(long chatId, String name){
-        String answer = "Hi, " + name + ", nice to meet you";
 
-
-
-        sendMessage(chatId, answer);
-    }*/
 
     private void sendMessage(long chatId, String textToSend){
         SendMessage message = new SendMessage();
